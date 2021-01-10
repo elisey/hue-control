@@ -4,5 +4,5 @@ matrix:
   include:
     - python: "3.6"
       env: TOXENV=pep8
-install: pip install tox
-script: tox
+install: apt install make
+script: make test
