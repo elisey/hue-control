@@ -1,8 +1,9 @@
 import argparse
-import sys
 from pathlib import Path
 import logging
 from phue import Bridge, AllLights, Light
+
+__version__ = "0.1.0"
 
 
 def int_from_0_to_100(x):
@@ -15,7 +16,7 @@ def int_from_0_to_100(x):
 class HueUtility:
     @staticmethod
     def connect(ip):
-        _ = Bridge(ip=ip)
+        Bridge(ip=ip)
 
     DEFAULT_LAMP_ID = 1
 
@@ -39,7 +40,7 @@ class HueUtility:
 
     def is_on(self):
         self.logger.debug("is_on")
-        return self.light.on == True
+        return self.light.on is True
 
     def brightness(self, brightness):
         self.logger.debug(f"brightness={brightness}")
@@ -115,8 +116,8 @@ def main():
     parser_connect = subparser.add_parser("connect", help="Connect to bridge. You should do it only once")
     parser_connect.add_argument("ip", type=str, help="Bridge IP address")
 
-    parser_on = subparser.add_parser("on", help="Turn on the device")
-    parser_off = subparser.add_parser("off", help="Turn off the device")
+    subparser.add_parser("on", help="Turn on the device")
+    subparser.add_parser("off", help="Turn off the device")
 
     parser_brightness = subparser.add_parser("br", help="Set device brightness")
     parser_brightness.add_argument("brightness", type=int, help="Device brightness. 0-100")
