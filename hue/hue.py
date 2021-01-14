@@ -5,6 +5,8 @@ from phue import Bridge, AllLights, Light
 
 __version__ = "0.1.0"
 
+logging.basicConfig()
+
 
 def int_from_0_to_100(x):
     x = int(x)
@@ -22,7 +24,7 @@ class HueUtility:
 
     def __init__(self, lamp_id):
         self.logger = logging.getLogger('hue_utility')
-        self.logger.setLevel(logging.DEBUG)
+        self.logger.setLevel(logging.INFO)
         self.bridge = Bridge()
 
         # LAMP_NAME = "Лампа"
