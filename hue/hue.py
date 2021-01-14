@@ -7,6 +7,7 @@ __version__ = "0.1.0"
 
 logging.basicConfig()
 
+
 def int_from_0_to_100(x):
     x = int(x)
     if x < 0 or x > 100:
