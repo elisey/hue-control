@@ -1,4 +1,5 @@
 *.pyc
-.tox/
 .mypy_cache/
 *.egg-info/
+dist/
+build/

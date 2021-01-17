@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/elisey/hue-utility.svg?branch=master)](https://travis-ci.org/elisey/hue-utility)
 
-# Hue utility
+# Hue control utility
 
 Utility for controling Hue smart lams
 
