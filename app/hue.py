@@ -3,6 +3,7 @@ from pathlib import Path
 import logging
 from phue import Bridge, AllLights, Light
 
+
 __version__ = "0.1.0"
 
 logging.basicConfig()
