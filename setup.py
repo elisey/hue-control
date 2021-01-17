@@ -4,6 +4,7 @@ from app.hue import __version__
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
+
 setup(
     name="hue-control",
     version=__version__,
