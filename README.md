@@ -1,8 +1,8 @@
-[![Build Status](https://travis-ci.org/elisey/hue-utility.svg?branch=master)](https://travis-ci.org/elisey/hue-utility)
+[![Build Status](https://travis-ci.com/elisey/hue-control.svg?branch=master)](https://travis-ci.org/elisey/hue-utility)
 
 # Hue control utility
 
-Utility for controling Hue smart lams
+Utility for controling Hue smart lams. It is using [phue library](https://github.com/studioimaginaire/phue)
 
 ## Initial connection to the Bridge. You should do it only once
 
